@@ -2,7 +2,7 @@
 @import "compass/css3/columns";
 @import "compass/css3/user-interface";
 
-$social-tags: '#io12';
+$social-tags: '#oscon';
 $brand-small-icon-size: 30px;
 
 $gray-1: #e6e6e6;
@@ -14,7 +14,7 @@ $brand-blue: rgb(67, 135, 253);
 $brand-blue-secondary: #3c8ef3;
 $brand-blue-secondary2: #2a7cdf;
 
-$brand-red: rgb(244, 74, 63);
+$brand-red: #c40022;
 $brand-red-secondary: #e0543e;
 $brand-red-secondary2: #d94d3a;
 
@@ -837,8 +837,8 @@ article.smaller {
 /* ===== SLIDE CONTENT ===== */
 .logoslide {
   img {
-    width: 383px;
-    height: 92px;
+    width: 833px;
+    height: 416px;
   }
 }
 
@@ -860,7 +860,7 @@ article.smaller {
 }
 
 .thank-you-slide {
-  background: $brand-blue !important;
+  background: $brand-red !important;
   color: white;
 
   h2 {

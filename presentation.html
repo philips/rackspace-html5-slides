@@ -1,0 +1,143 @@
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google IO 2012</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+<slide class="logoslide nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo.png"></span>
+  </article>
+</slide>
+
+<slide class="title-slide segue nobackground">
+  <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+  <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+  <hgroup class="auto-fadein">
+    <h1 data-config-title><!-- populated from slide_config.json --></h1>
+    <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+    <p data-config-presenter><!-- populated from slide_config.json --></p>
+  </hgroup>
+</slide>
+
+
+<slide class="image">
+  <hgroup>
+    <h1></h1>
+    <h2>Slide Title</h2>
+  </hgroup>
+  <article>
+  <p><img alt="Mobile vs desktop users" src="image.png" /></p>
+  </article>
+</slide>
+
+<slide class="big">
+  <hgroup>
+    <h1></h1>
+    <h2>Agenda</h2>
+  </hgroup>
+  <article>
+  <p>Things we'll cover:</p>
+<ul>
+<li>Bullet1</li>
+<li>Bullet2</li>
+<li>Bullet3</li>
+</ul>
+  </article>
+</slide>
+
+<slide class="nobackground fill">
+  <hgroup>
+    <h1></h1>
+    <h2>Today</h2>
+  </hgroup>
+  <article>
+  <p><img alt="Many kinds of devices." src="image.png" /></p>
+<footer class="source">source: place source info here</footer>
+  </article>
+</slide>
+
+<slide class="title-slide">
+  <hgroup>
+    <h1>Big Title Slide</h1>
+    <h2></h2>
+  </hgroup>
+  <article>
+  
+  </article>
+</slide>
+
+<slide class="">
+  <hgroup>
+    <h1></h1>
+    <h2>Code Example</h2>
+  </hgroup>
+  <article>
+  <p>Media Queries are sweet:</p>
+<pre class="prettyprint" data-lang="css">
+@media screen and (max-width: 640px) {
+  #sidebar { display: none; }
+}
+</pre>
+  </article>
+</slide>
+
+<slide class="">
+  <hgroup>
+    <h1></h1>
+    <h2>Once more, with JavaScript</h2>
+  </hgroup>
+  <article>
+  <pre class="prettyprint" data-lang="javascript">
+function isSmall() {
+  return window.matchMedia("(min-device-width: ???)").matches;
+}
+
+function hasTouch() {
+  return Modernizr.touch;
+}
+
+function detectFormFactor() {
+  var device = DESKTOP;
+  if (hasTouch()) {
+    device = isSmall() ? PHONE : TABLET;
+  }
+  return device;
+}
+</pre>
+  </article>
+</slide>
+
+
+<slide class="backdrop"></slide>
+
+</slides>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
