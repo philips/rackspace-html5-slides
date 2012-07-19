@@ -593,6 +593,32 @@ article.smaller {
   }
 }
 
+article.bigger {
+  p, ul {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0;
+  }
+  table {
+    td, th {
+      font-size: 28px;
+    }
+  }
+  pre {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0;
+  }
+  q {
+    font-size: 80px;
+    line-height: 96px;
+
+    &:before, &:after {
+      font-size: 120px;
+    }
+  }
+}
+
 /* Builds */
 
 .build {
